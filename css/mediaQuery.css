@@ -1,0 +1,22 @@
+/*  start media query */
+    /* from 0 mobild and tablets*/
+@media (max-width:767px)
+{ 
+    
+}
+    /* from phone to small screen*/
+@media (min-width:768px) and (max-width:991px)
+{
+ .container{width: 750px;margin: auto}
+}
+        /* from small screen to medium */
+@media (min-width:992px) and (max-width:1199px)
+{
+        .container{width: 960px;margin: auto}
+}   
+/* from medium to big */
+@media (min-width:1200px) 
+{
+ .container{width: 1170px;margin: auto}  
+}
+/*  start media query */

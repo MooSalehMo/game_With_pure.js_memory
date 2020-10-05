@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Memory Game</title>
+    <link rel=stylesheet href="css/style.css">
+    <link rel=stylesheet href="css/mediaQuery.css">
+</head>
+<body>
+    <!-- start control-buttons-->
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+    <!-- end control-buttons-->
+  <div class="container">
+      <!-- start info-tries-->
+      <div class="info-tries">
+      <div class="info">Hello : <span></span></div>
+      <div class="tries">Wrong ties : <span>0</span></div>
+      </div>
+      <!-- end info-tries-->
+      <!-- end end-time-->
+      <div class="end-time">The time is up, please start again <q>Mohamed Saleh</q></div>
+      <div class="show-face">Show all faces in less than six minutes</div>
+      <!-- start end-time-->
+      <!-- start memory-game-blocks-->
+      <div class="memory-game-blocks">
+          
+          <div class="game-block" data-technology="one">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/one.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="one">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/one.jpg">
+              </div>
+          </div>
+          
+          <div class="game-block" data-technology="two">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/two.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="two">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/two.jpg">
+              </div>
+          </div>
+          
+          <div class="game-block" data-technology="three">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/three.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="three">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/three.jpg">
+              </div>
+          </div>
+          
+          <div class="game-block" data-technology="foure">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/foure.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="foure">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/foure.jpg">
+              </div>
+          </div>
+          
+            <div class="game-block" data-technology="five">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/five.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="five">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/five.jpg">
+              </div>
+          </div>
+          
+            <div class="game-block" data-technology="six">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/six.png">
+              </div>
+          </div>
+           <div class="game-block" data-technology="six">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/six.png">
+              </div>
+          </div>
+          
+             <div class="game-block" data-technology="seven">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/seven.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="seven">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/seven.jpg">
+              </div>
+          </div>
+          
+             <div class="game-block" data-technology="eigth">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/eight.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="eight">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/eight.jpg">
+              </div>
+          </div>
+          
+             <div class="game-block" data-technology="nine">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/nine.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="nine">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/nine.jpg">
+              </div>
+          </div>
+          
+             <div class="game-block" data-technology="ten">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/ten.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="ten">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/ten.jpg">
+              </div>
+          </div>
+          
+           <div class="game-block" data-technology="eleven">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/eleven.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="eleven">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/eleven.jpg">
+              </div>
+          </div>
+          
+           <div class="game-block" data-technology="twelve">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/twelve.jpg">
+              </div>
+          </div>
+           <div class="game-block" data-technology="twelve">
+              <div class="face front"></div>
+              <div class="face back">
+              <img src="images/twelve.jpg">
+              </div>
+          </div>
+          
+      </div>
+      <!-- end memory-game-blocks-->
+          <audio id="success" src="audio/success.opus" preload="auto"></audio>
+          <audio id="fill" src="audio/fill.opus" preload="auto"></audio>
+          <audio id="start" src="audio/start.opus" preload="auto"></audio>
+ </div>
+ <script src="js/main.js"></script>
+</body>
+</html>

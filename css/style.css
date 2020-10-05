@@ -1,0 +1,143 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+    margin:0;
+    padding: 0
+}
+/*start  groping */
+body{}
+/*start control-buttons */
+.control-buttons {
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:3;
+    background-color: rgba(0, 0, 0, .8);
+}
+.control-buttons span{
+    position: absolute;
+    top:50%;
+    left: 45%;
+    font-size: 30px;
+    transform: translate(-50px, -50px);
+    background-color: #8daf4a;
+    color:#fff;
+    border-radius:5px;
+    padding:8px 15px;
+    cursor: pointer
+}
+/*end control-buttons */
+/*end end-time */
+.end-time{
+    position: fixed;
+    padding: 10px 15px;
+    color: #fff;
+    background: #8daf4a;
+    right: 0;
+    top:50%;
+    z-index: 10;
+    font-size: 25px;
+    display: none;
+    border-radius: 10px
+}
+.show-face{
+    position: fixed;
+    padding: 10px 15px;
+    color: #fff;
+    background: #8daf4a;
+    right: 0;
+    top:60%;
+    z-index: 10;
+    font-size: 25px;
+    border-radius: 10px
+}
+/*start end-time */
+/*start info-tries */
+.info-tries {
+    background-color:#8daf4a;
+    color:#fff;
+    border:2px solid#444;
+    overflow:hidden;
+    margin: 20px auto;
+    width: 850px;
+    padding: 12px 
+
+}
+.info-tries .info{padding: 5px 20px;font-size: 22px;float:left;width: 50%}
+.info-tries .tries{padding: 5px 20px;font-size: 22px;float:right;width: 50%;text-align:right}
+/*end  info-tries*/
+/*start  memory-game-blocks*/
+.memory-game-blocks{
+    display:flex;
+    flex-wrap:wrap;
+    width: 850px;
+    margin: auto
+}
+ .memory-game-blocks.no-clicking{pointer-events: none;}
+.memory-game-blocks .game-block{
+    transition:transform .5s;
+    width: 200px;
+    height:200px;
+    transform-style:preserve-3d;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 200px;
+    flex: 1 0 200px
+}
+.memory-game-blocks .game-block .front{
+    background-color:#444;
+    line-height: 200x;
+}
+.memory-game-blocks .game-block .front:after{
+    content:"?";
+    font-size:100px;
+    color:#fff;
+    line-height: 200px
+}
+.memory-game-blocks .game-block .back{
+    background-color:#888;
+    transform: rotateY(180deg);
+}
+
+.memory-game-blocks .game-block .back img {
+    height: 100%;
+    width: 100%;
+    background-size: cover
+}
+.memory-game-blocks .game-block .face{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border:5px solid#8daf4a
+}
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-match{
+    transform: rotateY(180deg);
+    pointer-events: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end  memory-game-blocks*/
